@@ -1,91 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NS Interior Design Consultant</title>
-  <meta name="description" content="NS Interior Design Consultant – Residential, Commercial, Hotels, Cafés. Interior design solutions in Mumbai, Dombivli, Kalyan.">
+
+  <!-- SEO -->
+  <meta name="description" content="NS Interior Design Consultant — Residential, Commercial, Hotels, and Cafés. Interior design services in Mumbai, Dombivli, and Kalyan." />
+  <meta name="keywords" content="Interior Designer Mumbai, Dombivli, Kalyan, Residential Interiors, Commercial Interiors, Hotel Interiors, Cafe Interiors" />
+  <meta name="author" content="NS Interior Design Consultant" />
+
   <style>
-    body {font-family: Arial, sans-serif; margin:0; background:#f8f8f8;}
-    header, footer {background:#111; color:#fff; text-align:center; padding:18px;}
-    nav a {color:#fff; text-decoration:none; margin:0 8px;}
-    section {padding:40px 20px; max-width:1000px; margin:auto; text-align:center;}
-    h2 {color:#111; margin-bottom:20px;}
-    .gallery img {max-width:300px; margin:10px; border-radius:8px;}
+    :root{
+      --brand:#111;
+      --light:#ffffff;
+      --bg:#f8f8f8;
+      --max:1000px;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:#222;
+      line-height:1.6;
+    }
+    header{
+      background:var(--brand);
+      color:var(--light);
+      text-align:center;
+      padding:28px 16px;
+    }
+    header img{
+      width:82px; height:auto; display:block; margin:0 auto 10px;
+    }
+    header h1{margin:6px 0 4px; font-size:26px}
+    header p{margin:0; opacity:.9}
+    nav{
+      margin:14px auto 0;
+      display:flex; gap:10px; justify-content:center; flex-wrap:wrap;
+    }
+    nav a{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#2b2b2b;
+      color:#fff; text-decoration:none; font-weight:600; font-size:14px;
+    }
+    main{max-width:var(--max); margin:0 auto; padding:24px 16px}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+      gap:16px;
+      margin-top:18px;
+    }
+    .card{
+      background:#fff; border-radius:var(--radius);
+      padding:18px; box-shadow:0 6px 18px rgba(0,0,0,.06);
+      text-align:center;
+    }
+    .cta{
+      display:inline-block; margin-top:10px;
+      background:var(--brand); color:#fff; text-decoration:none;
+      padding:10px 14px; border-radius:10px; font-weight:600;
+    }
+    h2{color:#111; text-align:center; margin:32px 0 10px}
+    footer{
+      background:var(--brand); color:#fff; text-align:center;
+      padding:18px; margin-top:28px;
+    }
+    footer .links a{color:#fff; text-decoration:none; margin:0 8px}
+    .contact a{color:#005bbb; text-decoration:none}
   </style>
 </head>
 <body>
 
-<header>
-  <img src="logo-png.png" alt="NS Interior Design Logo" style="max-width:80px;">
-  <h1>NS Interior Design Consultant</h1>
-  <p>
+  <header>
+    <img src="logo-png.png" alt="NS Interior Design Consultant logo">
+    <h1>NS Interior Design Consultant</h1>
+    <p>Mumbai • Dombivli • Kalyan</p>
+
+    <!-- Top navigation to your 4 detail pages -->
     <nav>
-      <a href="#residential">Residential</a> |
-      <a href="#commercial">Commercial</a> |
-      <a href="#hotels">Hotels</a> |
-      <a href="#cafes">Cafés</a>
+      <a href="residential.html">Residential</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="cafes.html">Cafés</a>
     </nav>
-  </p>
-</header>
+  </header>
 
-<!-- Residential Section -->
-<section id="residential">
-  <h2>Residential Interiors</h2>
-  <p>We design modern homes with premium materials like plywood, laminates, marble, and modular fittings. Price depends on space and style.</p>
-  <div class="gallery">
-    <img src="res1.jpg" alt="Residential Example 1">
-    <img src="res2.jpg" alt="Residential Example 2">
-    <img src="res3.jpg" alt="Residential Example 3">
-  </div>
-</section>
+  <main>
+    <!-- Intro -->
+    <section class="card">
+      <h2>Transforming Spaces with Elegance</h2>
+      <p>We design and deliver modern interiors with premium materials, precise execution, and transparent pricing.</p>
+    </section>
 
-<!-- Commercial Section -->
-<section id="commercial">
-  <h2>Commercial Interiors</h2>
-  <p>Office & commercial spaces designed with modular furniture, partitions, lighting, and durable flooring for productivity and appeal.</p>
-  <div class="gallery">
-    <img src="com1.jpg" alt="Commercial Example 1">
-    <img src="com2.jpg" alt="Commercial Example 2">
-    <img src="com3.jpg" alt="Commercial Example 3">
-    <img src="com4.jpg" alt="Commercial Example 4">
-  </div>
-</section>
+    <!-- Quick tiles to pages -->
+    <section>
+      <h2>Explore Our Work</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Residential Interiors</h3>
+          <p>Modular kitchens, wardrobes, living rooms & more.</p>
+          <a class="cta" href="residential.html">View Residential</a>
+        </div>
+        <div class="card">
+          <h3>Commercial Interiors</h3>
+          <p>Offices, clinics, retail—efficient, branded spaces.</p>
+          <a class="cta" href="commercial.html">View Commercial</a>
+        </div>
+        <div class="card">
+          <h3>Hotel Interiors</h3>
+          <p>Guest rooms, lobbies & dining with luxury finishes.</p>
+          <a class="cta" href="hotels.html">View Hotels</a>
+        </div>
+        <div class="card">
+          <h3>Cafés</h3>
+          <p>Theme-based concepts with durable, cozy materials.</p>
+          <a class="cta" href="cafes.html">View Cafés</a>
+        </div>
+      </div>
+    </section>
 
-<!-- Hotel Section -->
-<section id="hotels">
-  <h2>Hotel Interiors</h2>
-  <p>Luxury hotel spaces with designer lighting, acoustics, and high-end finishes to create comfort and elegance.</p>
-  <div class="gallery">
-    <img src="hotel1.jpg" alt="Hotel Example 1">
-    <img src="hotel2.jpg" alt="Hotel Example 2">
-  </div>
-</section>
+    <!-- Quick pricing -->
+    <section class="card">
+      <h2>Quick Pricing</h2>
+      <p><strong>1BHK from ₹9 L</strong> • <strong>2BHK from ₹10 L</strong> • <strong>3BHK from ₹13 L</strong> (final price depends on size and finishes).</p>
+      <p>Design &amp; drafting from <strong>₹1,000</strong>.</p>
+    </section>
 
-<!-- Cafe Section -->
-<section id="cafes">
-  <h2>Café Interiors</h2>
-  <p>Cafés designed with creative themes, wooden finishes, and seating layouts to enhance customer experience.</p>
-  <div class="gallery">
-    <img src="cafe1.jpg" alt="Cafe Example 1">
-    <img src="cafe2.jpg" alt="Cafe Example 2">
-    <img src="cafe3.jpg" alt="Cafe Example 3">
-    <img src="cafe4.jpg" alt="Cafe Example 4">
-  </div>
-</section>
+    <!-- Contact -->
+    <section class="card contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@nsinteriordesign.com">info@nsinteriordesign.com</a></p>
+      <p>Phone: <a href="tel:+919324733033">+91-9324733033</a></p>
+      <!-- Add more numbers if you like:
+      <p>Alt: <a href="tel:+919619683005">+91-9619683005</a> | <a href="tel:+919539552984">+91-95395 52984</a> | <a href="tel:+919994122984">+91-9994122984</a></p>
+      -->
+      <p>WhatsApp: <a href="https://wa.me/919324733033" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+    </section>
+  </main>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@nsinteriordesign.com">info@nsinteriordesign.com</a></p>
-  <p>Phone: <a href="tel:+919324733033">+91 93247 33033</a></p>
-</section>
+  <footer>
+    <div class="links">
+      <a href="residential.html">Residential</a> |
+      <a href="commercial.html">Commercial</a> |
+      <a href="hotels.html">Hotels</a> |
+      <a href="cafes.html">Cafés</a>
+    </div>
+    <p>© 2025 NS Interior Design Consultant</p>
+  </footer>
 
-<footer>
-  <p>© 2025 NS Interior Design Consultant</p>
-</footer>
-
-<!-- Chatbot Script -->
-<script src="//code.tidio.co/8ttqmjxkwe2npwsdxmlzzww0wdpubcra.js" async></script>
+  <!-- Tidio / chatbot -->
+  <script src="//code.tidio.co/8ttqmjxkwe2npwsdxmlzzww0wdpucbra.js" async></script>
 </body>
 </html>

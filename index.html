@@ -15,11 +15,24 @@
       background-color: #f8f8f8;
     }
     header {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* dark overlay for readability */
+}
+
+header h1, header p, header img {
+  position: relative; /* keeps text above overlay */
+  z-index: 1;
+}
     header img {
       max-width: 80px;
       display: block;
